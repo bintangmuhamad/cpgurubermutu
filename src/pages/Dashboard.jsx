@@ -2,9 +2,11 @@ import { useEffect, useState, useCallback } from "react";
 import { supabase } from "../lib/supabase";
 import { useNavigate } from "react-router-dom";
 import AppLayout from "../components/AppLayout";
+import EditProfileModal from "../components/EditProfileModal";
 
 function Dashboard() {
   const [user, setUser] = useState(null);
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
   const [currentDate, setCurrentDate] = useState("");
@@ -229,7 +231,7 @@ function Dashboard() {
               </div>
             </div>
             <div className="mt-4">
-              <button className="w-full border border-purple-600 text-purple-600 py-2.5 rounded-xl text-sm transition hover:bg-purple-50">Edit Profil</button>
+              <button onClick={() => setIsEditModalOpen(true)} className="w-full border border-purple-600 text-purple-600 py-2.5 rounded-xl text-sm transition hover:bg-purple-50">Edit Profil</button>
             </div>
           </div>
 
@@ -278,7 +280,7 @@ function Dashboard() {
 
           {/* Buttons */}
           <div className="mt-auto space-y-3 pt-6">
-            <button className="w-full border-2 py-2.5 rounded-xl text-sm font-bold transition hover:bg-purple-50"
+            <button onClick={() => setIsEditModalOpen(true)} className="w-full border-2 py-2.5 rounded-xl text-sm font-bold transition hover:bg-purple-50"
               style={{ borderColor: "#7C3AED", color: "#7C3AED" }}>
               Edit Profil
             </button>
@@ -290,6 +292,14 @@ function Dashboard() {
           </div>
         </div>
       </div>
+
+      <EditProfileModal 
+        isOpen={isEditModalOpen} 
+        onClose={() => setIsEditModalOpen(false)} 
+        user={user} 
+        profile={userData}
+        onUpdateSuccess={() => loadProfile(user)}
+      />
     </AppLayout>
   );
 }
