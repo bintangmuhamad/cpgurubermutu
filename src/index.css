@@ -1,0 +1,133 @@
+/* =========================
+   TAILWIND BASE
+========================= */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL STYLE
+========================= */
+body {
+  @apply bg-[#F8FBFB];
+}
+
+/* =========================
+   SCROLL TESTIMONIAL (HORIZONTAL)
+========================= */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* =========================
+   FADE UP (MASUK HALUS)
+========================= */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* =========================
+   FLOATING (GERAK NAIK TURUN)
+========================= */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* =========================
+   DELAY (OPTIONAL STAGGER)
+========================= */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* =========================
+   POP IN (MUNCUL DARI BAWAH)
+========================= */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  60% {
+    transform: translateY(-6px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-popIn {
+  animation: popIn 0.6s ease-out forwards;
+}
+
+/* ICE CREAM EXACT */
+@keyframes iceSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px) scale(0.95);
+  }
+  60% {
+    transform: translateX(16px) scale(1.03);
+  }
+  80% {
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ice-item {
+  opacity: 0;
+}
+
+.ice-show .ice-item {
+  animation: iceSlide 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* STAGGER NATURAL (INI KUNCI) */
+.ice-show .ice-item:nth-child(1) { animation-delay: 0.05s; }
+.ice-show .ice-item:nth-child(2) { animation-delay: 0.15s; }
+.ice-show .ice-item:nth-child(3) { animation-delay: 0.25s; }
+.ice-show .ice-item:nth-child(4) { animation-delay: 0.35s; }
+
+html, body {
+  overflow-x: hidden;
+}

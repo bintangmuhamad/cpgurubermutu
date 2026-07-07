@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a44a3528.css",
+    "main.js": "./static/js/main.3aaadedd.js",
+    "static/js/453.6cf9b269.chunk.js": "./static/js/453.6cf9b269.chunk.js",
+    "static/media/profile1.jpeg": "./static/media/profile1.c003f0f650420683ea7e.jpeg",
+    "static/media/gurugenz.jpg": "./static/media/gurugenz.f616c0c5cb6eb9975519.jpg",
+    "static/media/pelatihan.jpeg": "./static/media/pelatihan.2a7e1149b1c4be1d7edd.jpeg",
+    "static/media/profile4.jpeg": "./static/media/profile4.365a3655110f5b0398f9.jpeg",
+    "static/media/fotoproblem.jpeg": "./static/media/fotoproblem.050960a7a70b893980d0.jpeg",
+    "static/media/levelup.jpg": "./static/media/levelup.b2437592d1f021226773.jpg",
+    "static/media/curated1.jpg": "./static/media/curated1.aebe7852a5236e2d6c96.jpg",
+    "static/media/gambarjoin.jpg": "./static/media/gambarjoin.5c8792a9ca341a8ab2b7.jpg",
+    "static/media/workshop.jpg": "./static/media/workshop.7cd769b4b6c0f372cc37.jpg",
+    "static/media/join.jpeg": "./static/media/join.bd0c09b26feb561fbc0d.jpeg",
+    "static/media/profile3.jpeg": "./static/media/profile3.b17ce416db884c7101c6.jpeg",
+    "static/media/profile5.jpeg": "./static/media/profile5.f94b917782e103243e1f.jpeg",
+    "static/media/materi.jpeg": "./static/media/materi.1f54689864ad8208a804.jpeg",
+    "static/media/profile2.jpeg": "./static/media/profile2.1db5c69ef3d5443d9c4f.jpeg",
+    "static/media/Logo.png": "./static/media/Logo.b3ced7f3cfc81e5cee55.png",
+    "index.html": "./index.html",
+    "main.a44a3528.css.map": "./static/css/main.a44a3528.css.map",
+    "main.3aaadedd.js.map": "./static/js/main.3aaadedd.js.map",
+    "453.6cf9b269.chunk.js.map": "./static/js/453.6cf9b269.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a44a3528.css",
+    "static/js/main.3aaadedd.js"
+  ]
+}
